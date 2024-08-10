@@ -34,7 +34,7 @@ export const NavbarWrapper = ({ children }: Props) => {
               input: "w-full",
               mainWrapper: "w-full",
             }}
-            placeholder="Search..."
+            placeholder="Buscar..."
           />
         </NavbarContent>
         <NavbarContent
@@ -53,7 +53,7 @@ export const NavbarWrapper = ({ children }: Props) => {
           </div>
 
           <Link
-            href="https://github.com/Siumauricio/nextui-dashboard-template"
+            href="https://vit.cl"
             target={"_blank"}
           >
             <GithubIcon />

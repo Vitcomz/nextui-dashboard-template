@@ -56,6 +56,7 @@ export const SidebarWrapper = () => {
                 isActive={pathname === "/payments"}
                 title="Payments"
                 icon={<PaymentsIcon />}
+                 href="payments"
               />
               <CollapseItems
                 icon={<BalanceIcon />}
@@ -94,6 +95,7 @@ export const SidebarWrapper = () => {
                 isActive={pathname === "/settings"}
                 title="Settings"
                 icon={<SettingsIcon />}
+                 href="settings"
               />
             </SidebarMenu>
 
@@ -118,7 +120,7 @@ export const SidebarWrapper = () => {
             </Tooltip>
             <Tooltip content={"Profile"} color="primary">
               <Avatar
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                src="/logoVtz.jpg"
                 size="sm"
               />
             </Tooltip>
