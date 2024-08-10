@@ -19,8 +19,8 @@ interface Company {
 
 export const CompaniesDropdown = () => {
   const [company, setCompany] = useState<Company>({
-    name: "Acme Co.",
-    location: "Palo Alto, CA",
+    name: "El Peñon",
+    location: "Antofagasta, Chile",
     logo: <AcmeIcon />,
   });
   return (
@@ -47,8 +47,8 @@ export const CompaniesDropdown = () => {
         onAction={(e) => {
           if (e === "1") {
             setCompany({
-              name: "Facebook",
-              location: "San Fransico, CA",
+              name: "Minera Florida",
+              location: "Santiago",
               logo: <AcmeIcon />,
             });
           }
@@ -61,32 +61,33 @@ export const CompaniesDropdown = () => {
           }
           if (e === "3") {
             setCompany({
-              name: "Twitter",
-              location: "Brooklyn, NY",
+              name: "La Florida",
+              location: "Santiago",
               logo: <AcmeIcon />,
             });
           }
           if (e === "4") {
             setCompany({
-              name: "Acme Co.",
-              location: "Palo Alto, CA",
+              name: "El Peñon.",
+              location: "Antofagasta, Chile",
               logo: <AcmeIcon />,
             });
           }
         }}
         aria-label="Avatar Actions"
       >
+
         <DropdownSection title="Companies">
           <DropdownItem
             key="1"
             startContent={<AcmeIcon />}
-            description="San Fransico, CA"
+            description="Santiago, Chile."
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
             }}
           >
-            Facebook
+           Minera Florida
           </DropdownItem>
           <DropdownItem
             key="2"
@@ -95,10 +96,7 @@ export const CompaniesDropdown = () => {
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
-            }}
-          >
-            Instagram
-          </DropdownItem>
+            }}  >Instagram  </DropdownItem>
           <DropdownItem
             key="3"
             startContent={<AcmeIcon />}
@@ -106,20 +104,18 @@ export const CompaniesDropdown = () => {
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
-            }}
-          >
+            }} >
             Twitter
           </DropdownItem>
           <DropdownItem
             key="4"
             startContent={<AcmeIcon />}
-            description="Palo Alto, CA"
+            description="Antofagasta"
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
-            }}
-          >
-            Acme Co.
+            }} >
+            El Peñon
           </DropdownItem>
         </DropdownSection>
       </DropdownMenu>
