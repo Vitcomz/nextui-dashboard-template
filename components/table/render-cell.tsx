@@ -1,4 +1,4 @@
-import { User, Tooltip, Chip } from "@nextui-org/react";
+import { User, Tooltip, Chip, avatar } from "@nextui-org/react";
 import React from "react";
 import { DeleteIcon } from "../icons/table/delete-icon";
 import { EditIcon } from "../icons/table/edit-icon";
@@ -13,15 +13,12 @@ interface Props {
 export const RenderCell = ({ user, columnKey }: Props) => {
   // @ts-ignore
   const cellValue = user[columnKey];
+  
+
   switch (columnKey) {
     case "name":
       return (
-        <User
-          avatarProps={{
-            src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-          }}
-          name={cellValue}
-        >
+        <User avatarProps={{src:user.avatar}} name={cellValue}>
           {user.email}
         </User>
       );

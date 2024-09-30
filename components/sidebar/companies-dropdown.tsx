@@ -20,7 +20,7 @@ interface Company {
 export const CompaniesDropdown = () => {
   const [company, setCompany] = useState<Company>({
     name: "El Peñon",
-    location: "Antofagasta, Chile",
+    location: "4",
     logo: <AcmeIcon />,
   });
   return (
@@ -69,7 +69,7 @@ export const CompaniesDropdown = () => {
           if (e === "4") {
             setCompany({
               name: "El Peñon.",
-              location: "Antofagasta, Chile",
+              location: "MineraPenon",
               logo: <AcmeIcon />,
             });
           }
@@ -79,43 +79,41 @@ export const CompaniesDropdown = () => {
 
         <DropdownSection title="Companies">
           <DropdownItem
-            key="1"
-            startContent={<AcmeIcon />}
-            description="Santiago, Chile."
-            classNames={{
-              base: "py-4",
-              title: "text-base font-semibold",
-            }}
-          >
-           Minera Florida
-          </DropdownItem>
-          <DropdownItem
             key="2"
             startContent={<AcmeLogo />}
-            description="Austin, Tx"
+            description=" "
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
-            }}  >Instagram  </DropdownItem>
+            }}  >Codelco Andina  </DropdownItem>
           <DropdownItem
             key="3"
             startContent={<AcmeIcon />}
-            description="Brooklyn, NY"
+            description=""
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
             }} >
-            Twitter
+            Minera Spence
           </DropdownItem>
           <DropdownItem
             key="4"
             startContent={<AcmeIcon />}
-            description="Antofagasta"
+            description="4"
             classNames={{
               base: "py-4",
               title: "text-base font-semibold",
             }} >
             El Peñon
+          </DropdownItem>
+          <DropdownItem
+            key="5"
+            startContent={<AcmeIcon />}
+            description="5"
+            classNames={{
+              base: "py-4",
+              title: "text-base font-semibold",
+            }} >Minera Florida
           </DropdownItem>
         </DropdownSection>
       </DropdownMenu>

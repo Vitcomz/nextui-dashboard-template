@@ -1,8 +1,11 @@
 export const columns = [
-   {name: 'NAME', uid: 'name'},
-   {name: 'ROLE', uid: 'role'},
-   {name: 'STATUS', uid: 'status'},
-   {name: 'ACTIONS', uid: 'actions'},
+   {name: 'id', uid: 'id'},
+   {name: 'Name', uid: 'name'},
+   {name: 'Rol', uid: 'role'},
+   {name: 'Age', uid: 'age'},
+   {name: 'Status', uid: 'status'},
+   {name: 'Actions', uid: 'actions'},
+   
 ];
 export const users = [
    {

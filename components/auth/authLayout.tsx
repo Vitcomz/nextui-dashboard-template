@@ -34,9 +34,9 @@ export const AuthLayoutWrapper = ({ children }: Props) => {
         </div>
 
         <div className='z-10'>
-          <h1 className='font-bold text-[45px]'>Vitcomz Dashboard Template</h1>
+          <h1 className='font-bold text-[45px]'>Vitcomz App</h1>
           <div className='font-light text-slate-400 mt-4'>
-           Portal web (acá una descripción del sistema).
+           Aplicación Web para el control de neumaticos y bajas.
           </div>
         </div>
       </div>
